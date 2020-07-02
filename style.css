@@ -1,0 +1,61 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 89%;
+  background-image: linear-gradient(
+    to bottom,
+    #3a82ab,
+    #409ab8,
+    #54b1c0,
+    #71c8c7,
+    #94decc
+  );
+}
+
+.castle {
+  display: flex;
+}
+.castle img {
+  height: 30vw;
+  width: 30vw;
+  margin-right: 2rem;
+}
+
+.mario {
+  display: flex;
+}
+.mario img {
+  height: 10vw;
+  width: 10vw;
+  margin-left: 2rem;
+  -webkit-animation-name: moving;
+  -webkit-animation-duration: 4s;
+  animation-name: moving;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.ground {
+  background-image: url('./img/ground_mini.png');
+  height: 12vh;
+  display: flex;
+  align-items: flex-end;
+}
+@keyframes moving {
+  0% {
+    transform: translateY(calc(1%));
+  }
+  100% {
+    transform: translateX(40vw) translateY(calc(1%));
+  }
+}
