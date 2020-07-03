@@ -6,7 +6,6 @@ body {
   height: 100%;
   overflow: hidden;
 }
-
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -21,7 +20,6 @@ body {
     #94decc
   );
 }
-
 .castle {
   display: flex;
 }
@@ -30,7 +28,6 @@ body {
   width: 30vw;
   margin-right: 2rem;
 }
-
 .mario {
   display: flex;
 }
@@ -44,7 +41,6 @@ body {
   animation-duration: 4s;
   animation-fill-mode: forwards;
 }
-
 .ground {
   background-image: url('./img/ground_mini.png');
   height: 12vh;
